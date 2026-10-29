@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register – Guresha Delivery</title>
+<link rel="stylesheet" href="reg.css">
+</head>
+<body>
+
+<div class="reg-container">
+    <h1>Register</h1>
+
+    <form id="regForm">
+        <input type="text" id="fullname" placeholder="Full Name">
+        <p class="err" id="nameErr"></p>
+
+        <input type="email" id="email" placeholder="Email">
+        <p class="err" id="emailErr"></p>
+
+        <input type="password" id="password" placeholder="Password">
+        <p class="err" id="passErr"></p>
+
+        <button type="submit" class="reg-btn">Create Account</button>
+    </form>
+
+    <p class="small">Already registered? <a href="login.html">Login</a></p>
+</div>
+
+<script src="reg.js"></script>
+</body>
+</html>

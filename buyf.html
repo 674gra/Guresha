@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GURESHA FOOD DELIVERY</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: center;
+            
+            gap: 25px;
+           
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(20, 20, 20);
+    
+        }
+        .na{
+            display: flex;
+            justify-content:space-around;
+            align-items: center; 
+            gap: 80px;
+             border-bottom: 1px solid black;
+            
+        }
+         .na h1{
+        color: #8B0000;
+
+       }
+       .legend{
+         font-family: "Add";
+         font-size: 45px;
+         margin-top: 15px;
+         text-align: center;
+         margin-bottom: 15px;
+         color:rgb(20, 20, 20);
+       }
+       fieldset{
+        background-color: #8B0000;
+        color: #D4A017;
+        font-family: "Addis";
+        border-style: none;
+        width: 1000px;
+        border-radius: 20px;
+       
+       }
+       .p{
+        margin-left: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }
+
+       form{
+        margin-left: 200px;
+       }
+       @font-face {
+        font-family: "Addis";
+        src: url(Benaiah.otf);
+      }
+      @font-face {
+        font-family: "Add";
+        src: url(Kiros.ttf);
+      }
+      input{
+        background-color: rgb(237, 232, 243);
+        color: rgb(5, 6, 7);
+        border-style: none;
+        height: 30px;
+        border-radius: 1px 1px 15px 1px ;
+      }
+      .bb{
+        margin-left: 180px;
+        width: 100px;
+        height: 50px;
+        background-color: #0af558f8;
+        border-style: none;
+        border-radius: 15px;
+        font-family: "Addis";
+        color: #8B0000;
+        font-size: 35px;
+      }
+    </style>
+</head>
+<body>
+       <div class="na">
+
+       <h1>ጉርሻ።</h1>
+        <nav>
+            <a href="food.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="cont.html">CONTACT</a>
+
+        </nav>
+        <div id="cart-toggle" style="cursor:pointer; display:flex;align-items:center;gap:8px;">
+          <span style="font-size:22px">🛒</span><span id="cart-count">0</span>
+        </div>
+       
+    </div>
+     <form action="">
+           <div id="cart-root" style="margin-left:200px; margin-bottom:12px"></div>
+            <h2 class="legend">የትዕዛዝ ዝርዝር</h2>
+            <fieldset>
+                <div class="p">
+               <label for="">ስም:</label>
+               <input type="text" style="width: 400px;"> <br> <br>
+               <label for="">ስልክ:</label>
+              <button>+251</button>
+
+               <input type="tel" style="width: 345px;"> <br> <br>
+             
+               
+                <label for="">አድራሻ:</label>      
+                <select id="" name="food">
+                <option value="">ፒያሳ</option>
+                <option value="">ሜክሲኮ</option>
+                <option value="">ልደታ</option>
+                <option value="">ጀሞ 1</option>
+                <option value="">ጀሞ 2</option>
+                <option value="">ቄራ</option>
+                <option value="">ሳርበት</option>
+                </select> <br> <br>
+
+                
+               
+                <label for="">በምን እናሳውቆ፡</label>
+                <input type="radio" name="p">በመደወል
+               <input type="radio" name="p">sms <br> <br>
+
+               <button class="bb" onclick="placeOrder()">እዘዝ</button>
+               
+                
+</div>
+            </fieldset>
+        </form>
+        <script src="cart.js"></script>
+        <script>
+          // Cart is in-memory and does not persist across pages.
+          // If you navigated here directly, add items on the Menu or Food pages first.
+          document.getElementById('cart-toggle')?.addEventListener('click', function(){
+            alert('Cart is kept in memory only. Add items on the Menu or Food pages and stay on the same page to view the cart.');
+          });
+        </script>
+</body>
+</html>

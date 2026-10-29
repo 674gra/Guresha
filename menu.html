@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GURESHA FOOD DELIVERY</title>
+    <style>
+         nav{
+            display: flex;
+            justify-content: center;
+            
+          
+    
+            gap: 25px;
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(20, 20, 20);
+    
+        }
+        .na{
+            display: flex;
+            justify-content:space-around;
+            align-items: center; 
+            gap: 80px;
+            border-bottom: 1px solid black;
+            
+        } 
+        .na h1{
+        color: #8B0000;
+
+       }
+       .sec{
+        margin-top: 55px;
+        border-top: 10px solid tomato;
+        border-radius: 15px;
+       width: 1250px;
+       margin-left: 50px;
+       }
+       
+       .mff{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      
+       border-radius: 15px;
+       gap: 3px;
+       width: 1230px;
+       
+       }
+       .fo{
+        /* border: 1px solid rgba(94, 93, 93, 0.637); */
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 15px;
+     
+        
+       
+       }
+       .fo img{
+        width: 250px;
+        height: 200px;
+        /* border: 1px solid black; */
+        margin-top: 10px;
+        border-radius: 10px;
+
+       }
+       .fo:hover{
+        transform: scale(1.1);
+        
+       }
+       .buy{
+        background-color: rgb(19, 201, 65);
+        width: 85px;
+        height: 40px;
+        font-family: 'Addis';
+        color:#ffffff;
+        border-style: none;
+        border-radius: 5px;
+        font-size: 25px;
+       }
+          @font-face {
+        font-family: "Addis";
+        src: url(Benaiah.otf);
+      }
+      @font-face {
+        font-family: "Add";
+        src: url(Kiros.ttf);
+      }
+    
+       
+    </style>
+</head>
+<body>
+     <div class="na">
+
+       <h1>ጉርሻ።</h1>
+        <nav>
+            <a href="food.html">HOME</a>
+            <a href="">MENU</a>
+            <a href="cont.html">CONTACT</a>
+
+        </nav>
+        <div id="cart-toggle" style="cursor:pointer; display:flex;align-items:center;gap:8px;">
+            <span style="font-size:22px">🛒</span><span id="cart-count">0</span>
+        </div>
+    </div>
+   <div class="sec">
+        
+       
+        <div class="mff">
+            <div class="fo">
+                <img src="doro.webp" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ዶሮ ወጥ </h2>
+                <h4>ዋጋ፡2000 ብር</h4>
+                <button class="buy" onclick="addToCart('ዶሮ ወጥ',2000,'doro.webp')">ግዛ</button>
+                </div>
+            </div>
+
+             <div class="fo">
+                <img src="bozena.jpg" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ቦዘና ሽሮ </h2>
+                <h4>ዋጋ፡500 ብር</h4>
+                <button class="buy" onclick="addToCart('ቦዘና ሽሮ',500,'bozena.jpg')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="kitfo.png" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ክትፎ </h2>
+                <h4>ዋጋ፡2000 ብር</h4>
+                <button class="buy" onclick="addToCart('ክትፎ',2000,'kitfo.png')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="zilzil.webp" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ደረቅ ጥብስ </h2>
+                <h4>ዋጋ፡2300 ብር</h4>
+                <button class="buy" onclick="addToCart('ደረቅ ጥብስ',2300,'zilzil.webp')">ግዛ</button>
+                </div>
+            </div>
+
+            <div class="fo">
+                <img src="Dulet.jpg.webp" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ዱለት </h2>
+                <h4>ዋጋ፡3000 ብር</h4>
+                <button class="buy" onclick="addToCart('ዱለት',3000,'Dulet.jpg.webp')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="tere.jpg" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ጥሬ</h2>
+                <h4>ዋጋ፡2000 ብር</h4>
+                <button class="buy" onclick="addToCart('ጥሬ',2000,'tere.jpg')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="kaywot.jpg" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ቀይ ወጥ </h2>
+                <h4>ዋጋ፡2300 ብር</h4>
+                <button class="buy" onclick="addToCart('ቀይ ወጥ',2300,'kaywot.jpg')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="Beyayenetu.jpg" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ በያይነቱ </h2>
+                <h4>ዋጋ፡800 ብር</h4>
+                <button class="buy" onclick="addToCart('በያይነቱ',800,'Beyayenetu.jpg')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="Menchet.jpeg" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ምንቸት </h2>
+                <h4>ዋጋ፡2500 ብር</h4>
+                <button class="buy" onclick="addToCart('ምንቸት',2500,'Menchet.jpeg')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="fetira.jpg" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ፈጢራ </h2>
+                <h4>ዋጋ፡350 ብር</h4>
+                <button class="buy" onclick="addToCart('ፈጢራ',350,'fetira.jpg')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="gored.webp" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ጎረድ ጎረድ </h2>
+                <h4>ዋጋ፡2700 ብር</h4>
+                <button class="buy" onclick="addToCart('ጎረድ ጎረድ',2700,'gored.webp')">ግዛ</button>
+                </div>
+            </div>
+             <div class="fo">
+                <img src="quanta-firfir.webp" alt="">
+                <div style="
+                display: flex; justify-content: center; 
+                border-radius: 15px; margin-top: 5px;
+               
+                align-items: center; flex-direction: 
+                column; color:#8B0000; padding: 15px;">
+                <h2 >የምግብ አይነት፡ ቋንጣ ፍርፍር </h2>
+                <h4>ዋጋ፡1200 ብር</h4>
+                <button class="buy" onclick="addToCart('ቋንጣ ፍርፍር',1200,'quanta-firfir.webp')">ግዛ</button>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+    <script src="cart.js"></script>
+    <script>document.getElementById('cart-toggle')?.addEventListener('click', togglePanel);</script>
+</body>
+</html>

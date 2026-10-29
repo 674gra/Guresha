@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         nav{
+            display: flex;
+            justify-content: center;
+            
+            gap: 25px;
+           
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(20, 20, 20);
+    
+        }
+        .na{
+            display: flex;
+            justify-content:space-around;
+            align-items: center; 
+            gap: 80px;
+             border-bottom: 1px solid black;
+            
+        }
+         .na h1{
+        color: #8B0000;
+
+       }
+       .main{
+        display: flex;
+        justify-content: center;
+       margin-top: 35px;
+     
+       }
+       .cont{
+        width: 950px;
+        background-color: rgb(22, 31, 87);
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+        border-radius: 20px;
+         gap: 85px;
+       }
+       input{
+        height: 35px;
+        border-style: none;
+        border-radius: 15px;
+        width: 350px;
+       }
+       textarea{
+        width: 350px;
+        height: 70px;
+       }
+
+        @font-face {
+        font-family: "Addis";
+        src: url(Benaiah.otf);
+      }
+      @font-face {
+        font-family: "Add";
+        src: url(Kiros.ttf);
+      }
+      .h1{
+        color: #D4A017 ;
+       
+    
+        font-family:"Addis",sans-serif;
+        font-size: 50px;
+      
+       
+
+       }
+
+       button{
+        margin-left: 105px;
+        height: 35px;
+        width: 85px;
+       border-radius: 5px;
+       border-style: none;
+       background-color: rgb(59, 139, 231);
+       color:rgb(4, 15, 37);
+       font-size: 15px;
+       font-weight: bold;
+       }
+       button:hover{
+        background-color: aliceblue;
+        color: rgb(1, 236, 138);
+       }
+    </style>
+</head>
+<body>
+    <div class="na">
+
+       <h1>ጉርሻ።</h1>
+        <nav>
+            <a href="food.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="">CONTACT</a>
+
+        </nav>
+       
+    </div>
+
+    <div class="main">
+    <div class="cont">
+        <div>
+              <h1 class="h1">ጉርሻ delivery </h1>
+              <p><img src="icons8-location-48.png"  style="vertical-align: middle;" > ጀሞ ሚካኤል ሚና ሞል 1ኛ ፎቅ</p>
+              <p><img src="icons8-email-48.png"  style="vertical-align: middle;">   guresha@gmail.com</p>
+              <p><img src="icons8-phone-48.png"  style="vertical-align: middle;"> +251912345678</p>
+        </div>
+        
+        <div> 
+            <h2>contact form</h2>
+           
+          <input type="text" placeholder="ሙሉ ስም"> <br> <br>
+         <input type="text" placeholder="ኢ-ሜይል"> <br> <br>
+         <input type="tel" placeholder="ስልክ ቁጥር"> <br> <br>
+        <textarea name="" id=""placeholder='መልእክቶን ያስቀምጡ...'></textarea> <br> <br>
+          <button>SUBMIT</button>   
+    </div>
+
+    </div>
+   </div>
+</body>
+</html>
